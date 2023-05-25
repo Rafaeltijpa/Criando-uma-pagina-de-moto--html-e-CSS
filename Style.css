@@ -2,25 +2,27 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .container-header {
+    gap: 20px;
     width: 100vw;
     min-width: 300px;
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: red
+    background: linear-gradient(to right, #c53c24 10%, #412020);
+
 }
 
 
 .box-nav {
     width: 100vw;
-    height: 200px;
-    background: linear-gradient(to right, #e9725d 10%, #d61212);
+    height: 150px;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,8 +32,6 @@
 .box-nav nav {}
 
 .box-nav nav ul {
-
-
     padding: 25px;
     display: flex;
     justify-content: space-around;
@@ -44,16 +44,18 @@
     padding: 5px;
     border-radius: 10px;
     padding: 5px;
+    list-style: none;
 }
 
 .box-nav nav ul li a {
 
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
-    font-style: none;
     text-decoration: none;
+    color: black;
 
 }
+
 
 .box-nav nav ul li:hover {
     background-color: rgb(247, 195, 176);
@@ -68,4 +70,43 @@
     color: wheat;
     cursor: pointer;
     box-shadow: 2px 2px 2px 5px;
+}
+
+.box-nav button {
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: wheat;
+
+}
+
+.box-nav button:hover {
+    background: rgb(56, 243, 49);
+    cursor: pointer;
+    box-shadow: wheat 0px 1px 1px 2px;
+
+
+}
+
+.container-header-anuncio {
+
+    padding: 0 20px 0 40px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #412020, #c53c24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+
+
+
+}
+
+.box-descricao {
+    font-size: 18px;
+    min-width: 300px;
+    max-width: 500px;
 }
